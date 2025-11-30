@@ -8,13 +8,13 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 
 ## ✨ Features
 
-- ** Modern Design** - Clean, professional layout with purple tech theme
-- ** Fully Responsive** - Optimized for all devices (mobile, tablet, desktop)
-- ** Dark/Light Mode** - Toggle between themes with persistent preference
-- ** Fast Performance** - Single HTML file with optimized loading
-- ** Interactive Elements** - Smooth animations, hover effects, and filtering
-- ** Contact Integration** - Direct links to email, GitHub, and LinkedIn
-- ** Dynamic Content** - Animated counters and portfolio filtering
+- **Modern Design** - Clean, professional layout with purple tech theme
+- **Fully Responsive** - Optimized for all devices (mobile, tablet, desktop)
+- **Dark/Light Mode** - Toggle between themes with persistent preference
+- **Fast Performance** - Single HTML file with optimized loading
+- **Interactive Elements** - Smooth animations, hover effects, and filtering
+- **Contact Integration** - Direct links to email, GitHub, and LinkedIn
+- **Dynamic Content** - Animated counters and portfolio filtering
 
 ## 🛠️ Technologies Used
 
