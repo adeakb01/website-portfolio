@@ -409,7 +409,7 @@
             font-size: 2.5rem;
             font-weight: 700;
             color: var(--primary);
-            display: block; 
+            display: inline-block;
             font-family: 'Orbitron', sans-serif;
         }
         
@@ -529,7 +529,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+            background: url('https://img.freepik.com/premium-photo/background-with-futuristic-neon-circuit-patterns_783884-6069.jpg') no-repeat center center/cover;
             opacity: 0.05;
         }
         
@@ -610,6 +610,121 @@
         .timeline-content p {
             color: var(--text);
             opacity: 0.8;
+        }
+        
+        /* Experience Section */
+        .experience {
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dark-mode .experience {
+            background: var(--light);
+        }
+
+        .experience-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.3,gy-1,q-75,rh-3264,rw-5824,th-1080,tw-1920/1281638999190016100.jpeg') no-repeat center center/cover;
+            opacity: 0.05;
+        }
+        
+        /* Certifications Section */
+        .certifications {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--light) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .certifications-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://thumbs.dreamstime.com/b/using-blue-purple-technology-circuit-boards-glowing-electronic-components-as-futuristic-digital-concept-innovation-330962372.jpg') no-repeat center center/cover;
+            opacity: 0.05;
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .certification-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            border-top: 4px solid var(--primary);
+        }
+
+        .dark-mode .certification-card {
+            background: var(--secondary);
+        }
+
+        .certification-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(138, 43, 226, 0.2);
+        }
+
+        .certification-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            background: rgba(138, 43, 226, 0.1);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .certification-card h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .certification-date {
+            display: block;
+            background: var(--secondary);
+            color: var(--dark);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 15px 0;
+            display: inline-block;
+        }
+
+        .certification-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .certification-link:hover {
+            color: var(--accent);
+        }
+
+        .certification-logo {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            border-radius: 50%;
         }
         
         /* Services Section */
@@ -1221,6 +1336,8 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -1251,7 +1368,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Hello, I'm <span>Adeeba Akbar</span></h1>
-                <p>A data-driven tech enthusiast transforming ideas into intelligent digital solutions using modern technologies</p>
+                <p>A data-driven tech enthusiast transforming ideas into intelligent digital solutions using modern technologies.</p>
                 <div class="hero-btns">
                     <a href="#portfolio" class="btn">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Get In Touch</a>
@@ -1273,17 +1390,17 @@
                     <p>When I'm not coding, you can find me exploring new technologies, working on data analysis projects, or expanding my skill set in different programming languages and tools.</p>
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number" data-count="4">0</span>
+                            <span class="stat-number" data-count="4">0</span><br>
                             <span class="stat-text">Projects Completed</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-number" data-count="10">0</span>+<br>
                             <span class="stat-text">Technical Skills</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://wallpaperaccess.com/full/1368426.jpg" alt="Adeeba Akbar">
+                    <img src="https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.3,gy-1,q-75,rh-3264,rw-5824,th-1080,tw-1920/1281638999190016100.jpeg" alt="Adeeba Akbar">
                 </div>
             </div>
         </div>
@@ -1370,6 +1487,117 @@
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="experience-bg"></div>
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">My professional journey and work experience</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Programming Intern</h3>
+                        <h4>EVOASTRA Ventures </h4>
+                        <p>Dec 2023 - Feb 2024</p>
+                        <p>The internship provided comprehensive exposure to real-world software development practices, focusing on application design, structured programming, and code optimization.</p>
+                        <ul>
+                            <li>Designed and developed a text-based adventure game, implementing complex decision trees and logical branching to enhance user interactivity and engagement.</li>
+                            <li>Performed systematic debugging and performance optimization, reducing runtime errors and significantly improving execution efficiency</li>
+                            <li>Gained hands-on experience in modular programming, data handling, and user-focused design while strengthening analytical and logical problem-solving capabilities.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Analysis Volunteer</h3>
+                        <h4>Community Non-Profit</h4>
+                        <p>March 2024 - May 2024</p>
+                        <p>Analyzed donor data and created visualizations to help optimize fundraising strategies.</p>
+                        <ul>
+                            <li>Created interactive dashboards using Power BI</li>
+                            <li>Identified key donor patterns increasing donations.</li>
+                            <li>Automated data processing reducing manual work.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="certifications-bg"></div>
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Professional certifications and courses completed</p>
+            
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/10/Logo-Tata-700x394.png" alt="Tata Group" class="certification-logo">
+                    </div>
+                    <h3>Tata Group Advanced Training</h3>
+                    <p>Tata Group</p>
+                    <span class="certification-date">2025</span>
+                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_Wibrx97pSkWvxS8RH_1742059286903_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft Certified: Architectural components of Azure</h3>
+                    <p>Microsoft</p>
+                    <span class="certification-date">2025</span>
+                    <a href="https://learn.microsoft.com/api/achievements/share/en-us/AdeebaAkbar-0807/HZZMPFV8?sharingId=505650E5F15521AE" class="certification-link">View Certificate</a>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Programming in Python</h3>
+                    <p>cs50</p>
+                    <span class="certification-date">2025</span>
+                    <a href="https://certificates.cs50.io/1f643a1d-5314-4914-8309-dba476b73b13.pdf?size=letter" class="certification-link">View Certificate</a>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-icon">
+                       <img src="https://www.pngrepo.com/download/331437/ibm.png" alt="IBM" class="certification-logo">
+                    </div>
+                    <h3>Artificial Intelligence Fundamentals</h3>
+                    <p>IBM</p>
+                    <span class="certification-date">2025</span>
+                    <a href="https://www.credly.com/badges/c4237237-e8b2-4b17-a02c-f799eca10d40/public_url" class="certification-link">View Certificate</a>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-icon">
+                       <img src="https://www.pngrepo.com/download/331437/ibm.png" alt="IBM" class="certification-logo">
+                    </div>
+                    <h3>Customer Engagement</h3>
+                    <p>IBM</p>
+                    <span class="certification-date">2025</span>
+                    <a href="https://www.credly.com/badges/fa53223e-a2eb-463c-b6af-7bc795af1b8e/public_url" class="certification-link">View Certificate</a>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-icon">
+                       <img src="https://logos-world.net/wp-content/uploads/2021/08/Deloitte-Symbol.png" alt="Deloitte" class="certification-logo">
+                    </div>
+                    <h3>Data Analytics Job Simulation</h3>
+                    <p>IBM</p>
+                    <span class="certification-date">2025</span>
+                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Wibrx97pSkWvxS8RH_1742919420372_completion_certificate.pdf" class="certification-link">View Certificate</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="services-bg"></div>
@@ -1419,7 +1647,9 @@
                     <div class="portfolio-overlay">
                         <h3>Billing System</h3>
                         <p>Full-stack development of an invoice and billing management system</p>
-                        <a href="project-details.html?project=billing" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/yourusername/billing-system" target="_blank" class="portfolio-link">
+                            View on GitHub <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="web">
@@ -1427,7 +1657,9 @@
                     <div class="portfolio-overlay">
                         <h3>Hangman Game</h3>
                         <p>Interactive web-based word guessing game with multiple difficulty levels</p>
-                        <a href="project-details.html?project=hangman" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/yourusername/hangman-game" target="_blank" class="portfolio-link">
+                            View on GitHub <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="data">
@@ -1435,7 +1667,9 @@
                     <div class="portfolio-overlay">
                         <h3>Cyber Crime Against Women in India</h3>
                         <p>Statistical analysis of cyber crime trends and patterns targeting women in India</p>
-                        <a href="project-details.html?project=cybercrime" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/yourusername/cybercrime-analysis" target="_blank" class="portfolio-link">
+                            View on GitHub <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="data">
@@ -1443,7 +1677,9 @@
                     <div class="portfolio-overlay">
                         <h3>Academic Performance: Athletes vs Non-Athletes</h3>
                         <p>Data analysis project comparing academic performance between athlete and non-athlete students</p>
-                        <a href="project-details.html?project=academic" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/yourusername/academic-analysis" target="_blank" class="portfolio-link">
+                            View on GitHub <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1515,6 +1751,8 @@
                         <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
                         <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
                         <li><a href="#education"><i class="fas fa-chevron-right"></i> Education</a></li>
+                        <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                        <li><a href="#certifications"><i class="fas fa-chevron-right"></i> Certifications</a></li>
                         <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
                         <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
                         <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
@@ -1672,10 +1910,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
-
-
-
