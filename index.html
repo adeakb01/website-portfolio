@@ -47,8 +47,8 @@
             transition: all 0.3s ease;
         }
         
-        /* Dark Mode Variables */
-        body.dark-mode {
+        /* Dark Mode Variables - Now Default */
+        body {
             --light: #1a1a2e;
             --text: #e6e6e6;
             --dark: #bb86fc;
@@ -57,6 +57,18 @@
             --accent: #985eff;
             background: #1a1a2e;
             color: #e6e6e6;
+        }
+        
+        /* Light Mode Variables */
+        body.light-mode {
+            --light: #F8F8FF;
+            --text: #2C0033;
+            --dark: #4B0082;
+            --secondary: #E6E6FA;
+            --primary: #8A2BE2;
+            --accent: #9370DB;
+            background: #F8F8FF;
+            color: #2C0033;
         }
         
         h1, h2, h3, h4, h5 {
@@ -142,27 +154,27 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(26, 26, 46, 0.95);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(138, 43, 226, 0.1);
+            box-shadow: 0 2px 20px rgba(187, 134, 252, 0.1);
             z-index: 1000;
             transition: all 0.3s ease;
         }
         
-        .dark-mode header {
-            background: rgba(26, 26, 46, 0.95);
-            box-shadow: 0 2px 20px rgba(187, 134, 252, 0.1);
+        .light-mode header {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 20px rgba(138, 43, 226, 0.1);
         }
         
         header.scrolled {
-            background: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 5px 30px rgba(138, 43, 226, 0.15);
+            background: rgba(26, 26, 46, 0.98);
+            box-shadow: 0 5px 30px rgba(187, 134, 252, 0.15);
             padding: 5px 0;
         }
         
-        .dark-mode header.scrolled {
-            background: rgba(26, 26, 46, 0.98);
-            box-shadow: 0 5px 30px rgba(187, 134, 252, 0.15);
+        .light-mode header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 30px rgba(138, 43, 226, 0.15);
         }
         
         .navbar {
@@ -346,13 +358,13 @@
         
         /* About Section */
         .about {
-            background: white;
+            background: var(--light);
             position: relative;
             overflow: hidden;
         }
         
-        .dark-mode .about {
-            background: var(--light);
+        .light-mode .about {
+            background: white;
         }
         
         .about-bg {
@@ -390,14 +402,14 @@
         .stat {
             text-align: center;
             padding: 20px;
-            background: white;
+            background: var(--secondary);
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(138, 43, 226, 0.1);
             transition: all 0.3s ease;
         }
         
-        .dark-mode .stat {
-            background: var(--secondary);
+        .light-mode .stat {
+            background: white;
         }
         
         .stat:hover {
@@ -450,13 +462,13 @@
         
         /* Skills Section */
         .skills {
-            background: white;
+            background: var(--light);
             position: relative;
             overflow: hidden;
         }
         
-        .dark-mode .skills {
-            background: var(--light);
+        .light-mode .skills {
+            background: white;
         }
         
         .skills-bg {
@@ -478,14 +490,14 @@
         }
         
         .skill-category {
-            background: white;
+            background: var(--secondary);
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(138, 43, 226, 0.1);
         }
         
-        .dark-mode .skill-category {
-            background: var(--secondary);
+        .light-mode .skill-category {
+            background: white;
         }
         
         .skill-category h3 {
@@ -587,13 +599,13 @@
         
         .timeline-content {
             padding: 20px;
-            background: white;
+            background: var(--secondary);
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(138, 43, 226, 0.1);
         }
         
-        .dark-mode .timeline-content {
-            background: var(--secondary);
+        .light-mode .timeline-content {
+            background: white;
         }
         
         .timeline-content h3 {
@@ -614,13 +626,13 @@
         
         /* Experience Section */
         .experience {
-            background: white;
+            background: var(--light);
             position: relative;
             overflow: hidden;
         }
 
-        .dark-mode .experience {
-            background: var(--light);
+        .light-mode .experience {
+            background: white;
         }
 
         .experience-bg {
@@ -659,7 +671,7 @@
         }
 
         .certification-card {
-            background: white;
+            background: var(--secondary);
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(138, 43, 226, 0.1);
@@ -668,8 +680,8 @@
             border-top: 4px solid var(--primary);
         }
 
-        .dark-mode .certification-card {
-            background: var(--secondary);
+        .light-mode .certification-card {
+            background: white;
         }
 
         .certification-card:hover {
@@ -753,7 +765,7 @@
         }
         
         .service-card {
-            background: white;
+            background: var(--secondary);
             padding: 40px 30px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(138, 43, 226, 0.1);
@@ -764,8 +776,8 @@
             overflow: hidden;
         }
         
-        .dark-mode .service-card {
-            background: var(--secondary);
+        .light-mode .service-card {
+            background: white;
         }
         
         .service-card:before {
@@ -818,13 +830,13 @@
         
         /* Portfolio Section */
         .portfolio {
-            background: white;
+            background: var(--light);
             position: relative;
             overflow: hidden;
         }
         
-        .dark-mode .portfolio {
-            background: var(--light);
+        .light-mode .portfolio {
+            background: white;
         }
         
         .portfolio-bg {
@@ -848,17 +860,18 @@
         
         .filter-btn {
             padding: 8px 20px;
-            background: white;
+            background: var(--secondary);
             border: 2px solid var(--secondary);
             border-radius: 30px;
             cursor: pointer;
             font-weight: 500;
             transition: all 0.3s ease;
             box-shadow: 0 4px 10px rgba(138, 43, 226, 0.1);
+            color: var(--text);
         }
         
-        .dark-mode .filter-btn {
-            background: var(--secondary);
+        .light-mode .filter-btn {
+            background: white;
             color: var(--text);
         }
         
@@ -967,14 +980,14 @@
             gap: 15px;
             margin-bottom: 30px;
             padding: 20px;
-            background: white;
+            background: var(--secondary);
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(138, 43, 226, 0.1);
             transition: all 0.3s ease;
         }
         
-        .dark-mode .contact-item {
-            background: var(--secondary);
+        .light-mode .contact-item {
+            background: white;
         }
         
         .contact-item:hover {
@@ -1022,7 +1035,7 @@
             justify-content: center;
             width: 50px;
             height: 50px;
-            background: white;
+            background: var(--secondary);
             color: var(--primary);
             border-radius: 50%;
             text-decoration: none;
@@ -1030,8 +1043,8 @@
             box-shadow: 0 5px 15px rgba(138, 43, 226, 0.1);
         }
         
-        .dark-mode .social-icons a {
-            background: var(--secondary);
+        .light-mode .social-icons a {
+            background: white;
         }
         
         .social-icons a:hover {
@@ -1232,14 +1245,14 @@
                 top: 70px;
                 left: 0;
                 width: 100%;
-                background: white;
+                background: var(--secondary);
                 box-shadow: 0 5px 10px rgba(0,0,0,0.1);
                 padding: 20px;
                 text-align: center;
             }
             
-            .dark-mode .nav-links {
-                background: var(--secondary);
+            .light-mode .nav-links {
+                background: white;
             }
             
             .nav-links.active {
@@ -1320,7 +1333,7 @@
         }
     </style>
 </head>
-<body>
+<body class="dark-mode">
     <!-- Loading Animation -->
     <div class="loader">
         <div class="loader-spinner"></div>
@@ -1343,7 +1356,7 @@
                     <li><a href="#contact">Contact</a></li>
                     <li>
                         <button id="theme-toggle" class="theme-btn">
-                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
                         </button>
                     </li>
                 </ul>
@@ -1866,21 +1879,21 @@
         // Dark/Light Mode Toggle
         const themeToggle = document.getElementById('theme-toggle');
         themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            themeToggle.innerHTML = isDarkMode 
-                ? '<i class="fas fa-sun"></i>' 
-                : '<i class="fas fa-moon"></i>';
+            document.body.classList.toggle('light-mode');
+            const isLightMode = document.body.classList.contains('light-mode');
+            themeToggle.innerHTML = isLightMode 
+                ? '<i class="fas fa-moon"></i>' 
+                : '<i class="fas fa-sun"></i>';
             
             // Save theme preference to localStorage
-            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
         });
 
         // Load saved theme preference
         const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
         }
 
         // Scroll event listeners
