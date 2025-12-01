@@ -1,4 +1,4 @@
-# 💻 Adeeba Akbar - Tech Portfolio
+# Tech Portfolio
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a tech professional. Built with pure HTML, CSS, and JavaScript.
 
