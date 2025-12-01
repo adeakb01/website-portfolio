@@ -49,7 +49,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 #### Option 2: GitHub Clone
 ```bash
 # Clone the repository
-git clone  https://github.com/adeakb01/website-portfolio
+git clone  https://github.com/adeakb01/website-portfolio.git
 
 # Navigate to the folder
 cd website-portfolio
