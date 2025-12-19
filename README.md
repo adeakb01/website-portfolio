@@ -2,11 +2,11 @@
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a tech professional. Built with pure HTML, CSS, and JavaScript.
 
-## 🚀 Live Demo
+##  Live Demo
 
 [**View Live Portfolio**](https://website-portfolio-amber-three.vercel.app/)
 
-## ✨ Features
+##  Features
 
 - **Modern Design** - Clean, professional layout with purple tech theme
 - **Fully Responsive** - Optimized for all devices (mobile, tablet, desktop)
@@ -16,14 +16,14 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 - **Contact Integration** - Direct links to email, GitHub, and LinkedIn
 - **Dynamic Content** - Animated counters and portfolio filtering
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Icons:** Font Awesome 6.4.0
 - **Fonts:** Google Fonts (Exo 2, Orbitron)
 - **Deployment:** Vercel
   
-## 🎨 Sections Included
+##  Sections Included
 
 - **Hero** - Introduction with call-to-action
 - **About** - Personal background and statistics
@@ -35,7 +35,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 - **Portfolio** - Project showcase with filtering
 - **Contact** - Contact information and social links
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - A modern web browser(Chrome,Firefox,Safari,Edge)
